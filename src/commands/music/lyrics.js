@@ -26,12 +26,28 @@ module.exports = class Lyrics extends Command {
   async run({ channel, author, t, args }) {
     const embed = new MessageEmbed(author)
 
-    const search = args[0] ? args.join(' ') : args.join(' ')
+
+    const search = args.join(' ')
     const AUTHOR = author.presence.activities
+    
+    function spotify(AUTHOR){
+      try {
+        if(AUTHOR[0].name === 'Spotify'){
+          return true
+        }
+      } catch {
+        return false
+      }
+    }
+    const title = spotify(AUTHOR) ? AUTHOR[0].details : search.split('-')[0] 
+    const artist = spotify(AUTHOR) ? AUTHOR[0].state.split(';')[0] : search.split('-')[1] 
 
-    const title = search.split('-')[0] || AUTHOR[0].details
-    const artist = search.split('-')[1] || AUTHOR[0].state.split(';')[0]
-
+    if(!title && !artist) {
+      return channel.send(embed
+        .setDescription(`❌ **${author.username}**, ${t('commands:lyrics:noSong')}`)
+        .setColor(Constants.ERROR_COLOR)
+      )
+    }
     if (search || AUTHOR[0].name === 'Spotify') {
       const hit = await this.client.apis.geniusapi.loadLyrics(title, artist)
       const Art = await this.client.apis.geniusapi.loadArt(title, artist)
@@ -95,11 +111,6 @@ module.exports = class Lyrics extends Command {
           .setColor(Constants.ERROR_COLOR)
         )
       }
-    } else {
-      return channel.send(embed
-        .setDescription(`❌ **${author.username}**, ${t('commands:lyrics:noSong')}`)
-        .setColor(Constants.ERROR_COLOR)
-      )
     }
   }
 

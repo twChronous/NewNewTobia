@@ -168,6 +168,7 @@ module.exports = class UserInfo extends Command {
        new MessageEmbed(author)
         .setAuthor(this.client.user.username, displayAvatarURL)
         .setThumbnail(user.avatarURL ? user.avatarURL : displayAvatarURL)
+        .setColor(Constants.EMBED_COLOR)
         .addField(
           t('commands:userinfo.permissions'),
           channel
