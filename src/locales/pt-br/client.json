@@ -1,0 +1,10 @@
+{
+    "description": "Tobias é um bot com multiplas funções, que preza acima de tudo entregar qualidade aos seus usuários",
+    "viewCommandList": "Veja minha lista de comandos",
+    "toKnowMoreHelp": "Para ter a lista completa use `{{commandString}}` ou acesse:",
+    "aboutHelping": "Que tal me ajudar",
+    "configureYourServer": "Configure o seu servidor aqui!",
+    "timeOnline": "Tempo de atividade",
+    "clientUserHelp": "{{- clientUser.username}} - Ajuda",
+    "mentionBot": "Use {{prefix}} commands para saber minha lista de comandos "
+  }

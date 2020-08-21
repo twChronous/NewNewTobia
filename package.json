@@ -1,0 +1,25 @@
+{
+  "name": "newnewtobia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.6.0",
+    "file-type": "^14.6.0",
+    "fs": "^0.0.1-security",
+    "genius-lyrics-api": "^3.0.2",
+    "i18next": "^19.4.5",
+    "i18next-node-fs-backend": "^2.1.3",
+    "moment": "^2.26.0",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^5.9.16",
+    "transform-props": "^1.0.1",
+    "util": "^0.12.3"
+  }
+}

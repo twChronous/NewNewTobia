@@ -1,0 +1,44 @@
+{
+    "usage": "Uso",
+    "aliases": "Abreviações",
+    "enabled": "habilitado",
+    "disabled": "desabilitado",
+    "permissions": "Permissões",
+    "botPermissions": "Permissões do Bot",
+    "none": "Nenhum",
+    "none_a": "Nenhuma",
+    "processed": "processada",
+    "processed_plural": "processadas",
+    "channelTypes": {
+      "text": "Texto",
+      "category": "Categoria",
+      "voice": "Voz"
+    },
+    "texts": {
+      "subcommands": "Subcomandos",
+      "versions": "Versões",
+      "about": "Sobre",
+      "notDefined": "Não Definido"
+    },
+    "utils": {
+      "website": "Website",
+      "invite": "Convite",
+      "additional": "Adicional"
+    },
+    "timeResponses": {
+      "s": "segundo",
+      "s_plural": "segundos",
+      "m": "minuto",
+      "m_plural": "minutos",
+      "h": "hora",
+      "h_plural": "horas",
+      "d": "dia",
+      "d_plural": "dias",
+      "w": "semana",
+      "w_plural": "semanas",
+      "mo": "mês",
+      "mo_plural": "mêses",
+      "y": "ano",
+      "y_plural": "anos"
+    }
+  }

@@ -1,0 +1,23 @@
+{
+    "LISTENING": [
+      "Spotify",
+      "Pyotr Ilyich Tchaikovsky"
+    ],
+    "WATCHING": [
+      "Tobias Team fixing-me",
+      "CSI: Crime Scene Investigation",
+      "House",
+      "Brazil x Alemanha",
+      "{guilds} Servers | Prefix: {prefix}",
+      "{users} Users in {guilds} Servers"
+    ],
+    "STREAMING": [
+      "Music in {musicServers} servers!"
+    ],
+    "PLAYING": [
+      "Battlefield 4",
+      "Fortnite",
+      "PUBG Lite",
+      "@{client} help"
+    ]
+  }
