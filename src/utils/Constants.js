@@ -38,7 +38,7 @@ module.exports = {
   // Bot Settings
   CLIENT_ID: '553725634724102144',
   DEFAULT_PREFIX: 'tc.',
-  DEFAULT_LANGUAGE: 'pt-br',
+  DEFAULT_LANGUAGE: 'pt-BR',
   BOT_GUILD: '500452776770535444',
   DEVELOPER_ROLE: '671404243449544704',
   REGION: 'asia|eu|us|sam',

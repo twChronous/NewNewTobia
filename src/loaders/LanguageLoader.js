@@ -21,6 +21,7 @@ module.exports = class LanguageLoader {
         return i18next
           .use(translationBackend)
           .init({
+            debug: true,
             ns: [
               'commands',
               'errors',
@@ -31,7 +32,7 @@ module.exports = class LanguageLoader {
               'client'
             ],
             preload: await readdirSync(dirPath),
-            fallbackLng: this.language.rootDir,
+            fallbackLng: ['pt-BR', 'en-US'],
             backend: {
               loadPath: `${dirPath}/{{lng}}/{{ns}}.json`
             },
