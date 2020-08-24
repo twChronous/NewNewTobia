@@ -27,8 +27,8 @@ module.exports = class MessageResponse {
     const { prefix, language } = (message.guild
       ? await this.client.database.guilds.get(message.guild.id)
       : {
-        prefix: process.env.PREFIX,
-        language: process.env.LANG_ROOT
+        prefix: Constants.DEFAULT_PREFIX,
+        language: Constants.DEFAULT_LANGUAGE
       }
     );
 
