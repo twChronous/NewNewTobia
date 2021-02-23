@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const moment = require('moment')
-const { Command, Emojis, Constants } = require('../../')
+const { Command, Emojis, Constants } = require('../..')
 const { MessageEmbed } = require('discord.js');
 
 const msgTimeOut = async (msg, time) => {

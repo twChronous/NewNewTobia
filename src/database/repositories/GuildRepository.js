@@ -11,9 +11,8 @@ module.exports = class GuildRepository extends MongoRepository {
     return {
       prefix: Constants.DEFAULT_PREFIX,
       language: Constants.DEFAULT_LANGUAGE,
-      commandsChannel: [],
-      systemsConfigurable: [],
-      systemsDisabled: [],
+      welcomeMessage: [],
+      memberCounter: [],
       modules: new Map(),
       ...(super.parse(entity) || {})
     }

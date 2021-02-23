@@ -8,8 +8,6 @@ module.exports = class ClientRepository extends MongoRepository {
   parse (entity) {
     return {
       maintence: false,
-      voteds: [],
-      removeVotes: [],
       ...(super.parse(entity) || {})
     }
   }

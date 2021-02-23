@@ -11,6 +11,7 @@
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "eslint": "^7.6.0",
+    "figlet": "^1.5.0",
     "file-type": "^14.6.0",
     "fs": "^0.0.1-security",
     "genius-lyrics-api": "^3.0.2",
